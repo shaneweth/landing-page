@@ -11,6 +11,7 @@ body {
     border-bottom: dotted .5em #E8D484;
     justify-content: center;
     text-align: center;
+    width: 75%;
 }
 
 h1 {
@@ -27,7 +28,7 @@ h1 {
     width: 12.5em;
     background-color: rgba(213, 70, 51, 0.603);
     position: absolute;
-    height: 100%;
+    height: 120%;
     overflow: auto;
     border: solid rgba(250, 235, 215, 0.534) .2em;
 }
@@ -52,28 +53,6 @@ h1 {
     color: black;
 }
 
-article {
-    position: absolute;
-    font-family: 'Open Sans', sans-serif;
-    left: 20%;
-    padding: .4em;
-    width: 45%;
-    top: 35%;
-    justify-content: baseline;
-    border: #E8D484 solid 1px;
-    background-color: rgba(117, 190, 218, 0.5);  /* 50% transparent */
-}
-img {
-    position: absolute;
-    height: 16em;
-    padding: .5em;
-    top: 28%;
-    right: 20%;
-    /* justify-content: baseline; */
-    border: black solid 1px;
-    
-    }   
-
 .flex-grid {
     display: flex;
 }
@@ -84,8 +63,50 @@ img {
 }
 
 
+article {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    left: 22%;
+    padding: 1.5em;
+    width: 30%;
+    top: 30%;
+    justify-content: baseline;
+    background-color: rgba(117, 190, 218, 0.5);  /* 50% transparent */
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+img {
+    position: absolute;
+    height: 22em;
+    padding: .5em;
+    top: 20%;
+    right: 22%;
+    /* justify-content: baseline; */
+    border: black inset 1px;
+    
+    }   
 
 
+/* Styling for Portfolio */
+
+#port-box {
+    position: relative;
+    /* flex-basis: 100%; */
+    background-color: rgba(232, 212, 132, 0.603);
+    width: 40%;
+    top: 5rem;
+    height: 30rem;
+    margin: auto;
+    border: solid #2E4861 2px;
+    border-radius: 3%;
+}
+
+
+
+
+
+/* Styling for Contact Form */
 
 form {
     display: block;
@@ -119,8 +140,6 @@ input[type=text], select, textarea {
   input[type=submit]:hover {
     background-color: #45a049;
   }
-  
-
 
 .footer {
     background-color: rgba(213, 70, 51, 0.603);
@@ -135,6 +154,10 @@ input[type=text], select, textarea {
 
 }
 
+/* Media Queries.... */
+
+
+
 @media (min-width: 1200px) {
     body {
         background-size: cover;
@@ -142,6 +165,18 @@ input[type=text], select, textarea {
 
     h1 {
         justify-content: right;
+    }
+
+    article {
+        size: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1024) {
+   
+    .sidebar {
+        width: 20%;
     }
 }
 
@@ -158,9 +193,6 @@ input[type=text], select, textarea {
         background-size: auto;
     }
 
-    .flex-grid {
-        display: inline;
-    }
     
 }
 
