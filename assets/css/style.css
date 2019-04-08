@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16 px;
+    background-image: url("../images/background-1773664_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 12.5em;
+    background-color: rgba(213, 70, 51, 0.603);
+    position: absolute;
+    height: 100%;
+    overflow: auto;
+    border: solid rgba(250, 235, 215, 0.534) .2em;
+}
+
+.sidebar a {
+    display: block;
+    font-family: 'Old Standard TT', serif;
+    color: black;
+    font-size: 1.5em;
+    padding: 1em;
+    text-decoration: none;
+
+}
+
+.sidebar a.active {
+    background-color: rgba(66, 82, 74, 0.856);
+    color: antiquewhite;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: rgba(228, 214, 142, 0.603);
+    color: black;
+}
+
+article {
+    position: absolute;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    left: 20%;
+    padding: 3%;
+    margin: 3%;
+    
+}
+.flex-grid {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
+h1 {
+    font-family: 'Old Standard TT', serif;
+    color: #E8D484;
+    font-size: 3.2em;
+    letter-spacing: 3px;
+    text-align: center;
+    
+}
+
+form {
+    display: block;
+    margin: 5%;
+    justify-content: center;
+    left: 20%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 20%; /* Full width */
+    padding: .5em; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: rgba(66, 82, 74, 0.856);
+    color: white;
+    padding: .8em 1em;
+    border: none;
+    border-radius: .2em;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+
+
+.footer {
+    background-color: rgba(213, 70, 51, 0.603);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    height: 12%;
+    border: solid rgba(250, 235, 215, 0.534) .2em;
+    text-align: center;
+
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-size: cover;
+    }
+
+    h1 {
+        justify-content: right;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {float: left;}
+
+    body {
+        background-size: auto;
+    }
+
+    .flex-grid {
+        display: inline;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
