@@ -31,6 +31,7 @@ h1 {
     height: 120%;
     overflow: auto;
     border: solid rgba(250, 235, 215, 0.534) .2em;
+    border-radius: .3em;
 }
 
 .sidebar a {
