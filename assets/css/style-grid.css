@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0 0 10em 0;
+    height: 100%;
+    background-image: url("../images/background-1773664_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+main { grid-area: main; }
+footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  min-height: 100%;
+  grid-template:
+    '. . header header '
+    'sidebar main main . '
+    'footer footer footer footer  ';
+  grid-template-columns: 15% 30% 30% 15%;
+  grid-gap: .3em;
+  padding: .3em;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: .8em 0;
+  font-size: 1em;
+}
+
+header {
+    margin-top: 8%;
+    width: 100%;
+}
+.name {
+    width: 40rem;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background-color: rgba(168, 55, 41, 0.4);
+    border: outset rgba(250, 235, 215, 0.4) .1em;
+    border-radius: .3em;
+
+}
+
+h1 {
+    color: antiquewhite;
+    /* color: rgb(243, 232, 190); */
+    margin: .1em;
+    font-size: 3em;
+    letter-spacing: .1em;
+    
+}
+
+sidebar {
+    background-color: rgba(213, 70, 51, 0.603);
+    margin-top: 5%;
+    width: 80%;
+    border: solid rgba(250, 235, 215, 0.534) .2em;
+    border-radius: .3em;
+}       
+
+.sidebar a {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-size: 1.6em;
+    padding: 2em;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: .1em;
+
+}
+
+.sidebar a.active {
+    color: antiquewhite;
+    
+}
+
+.sidebar a:hover:not(.active) {
+    color: rgba(76, 101, 79);
+    font-size: 1.8;
+
+}
+
+li {
+    text-align: center;
+}
+
+
+main {
+    height: 80%;
+    margin: 10%;
+    width: 100%;
+    background-color: rgba(76, 101, 79, .6);
+    border: inset rgba(65, 65, 65, 0.582) .3em;
+    border-radius: .3em;
+}
+
+article {
+    position: relative;
+    font-family: 'Playfair Display', serif;
+
+    font-size: 1.2em;
+    margin: 2em;
+    padding: 3em;
+    width: 80%;
+    height: 50%;
+    background-color: rgba(243, 232, 190, .4);
+    border-radius: .3em;
+}
+p {
+    padding: .1em;
+    letter-spacing: .1em;
+}
+
+img {
+    height: 12em; 
+    float: right;
+    margin: 3%;
+}
+
+
+footer {
+    background-color: rgba(213, 70, 51, 0.603);
+    position: absolute;
+    bottom: 0;
+    height: 8em;
+    width: 99%;
+    border: solid rgba(250, 235, 215, 0.534) .2em;
+    border-radius: .3em;
+    text-align: center;
+}

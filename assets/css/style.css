@@ -1,12 +1,18 @@
 body {
-    margin: 0;
-    padding: 0;
+    
     font-size: 16 px;
+    height: 100%;
     background-image: url("../images/background-1773664_1920.jpg");
     background-repeat: no-repeat;
     background-size: auto;
-    
+    display: grid;
+    grid-template-areas: ". . name ."
+                         "nav main main ."
+                         "nav main main ." 
+                         "footer footer footer footer"
 }
+
+
 .name {
     border-bottom: dotted .5em #E8D484;
     justify-content: center;
@@ -23,19 +29,17 @@ h1 {
 }
 
 .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 12.5em;
+    grid-area: nav;
+    width: fit-content;
     background-color: rgba(213, 70, 51, 0.603);
-    position: absolute;
-    height: 120%;
+    height: 100%;
     overflow: auto;
     border: solid rgba(250, 235, 215, 0.534) .2em;
     border-radius: .3em;
-}
+    grid-row-gap: .8em;
+}       
 
 .sidebar a {
-    display: block;
     font-family: 'Old Standard TT', serif;
     color: black;
     font-size: 1.5em;
@@ -54,37 +58,43 @@ h1 {
     color: black;
 }
 
-.flex-grid {
+/* .flex-grid {
     display: flex;
 }
 
 .col {
     flex: 1;
     /* width: 25%; */
+/* } */
+
+main {
+    grid-area: main;
 }
 
 
-article {
-    position: absolute;
-    font-family: 'Open Sans', sans-serif;
+/* article {
+    /* position: absolute; */
+    /* font-family: 'Open Sans', sans-serif;
     left: 22%;
     padding: 1.5em;
     width: 30%;
     top: 30%;
     justify-content: baseline;
     background-color: rgba(117, 190, 218, 0.5);  /* 50% transparent */
-    border-radius: 4px;
-    letter-spacing: 1px;
-}
+    /* border-radius: 4px;
+    letter-spacing: 1px; */ 
+
 
 img {
-    position: absolute;
-    height: 22em;
+    /* position: absolute;
+    height: 15em;
     padding: .5em;
     top: 20%;
-    right: 22%;
-    /* justify-content: baseline; */
-    border: black inset 1px;
+    right: 20%;
+    justify-content: baseline;
+    border: black inset 1px; */
+    height: 15em;
+    width: 18em;
     
     }   
 
@@ -102,9 +112,6 @@ img {
     border: solid #2E4861 2px;
     border-radius: 3%;
 }
-
-
-
 
 
 /* Styling for Contact Form */
@@ -143,12 +150,13 @@ input[type=text], select, textarea {
   }
 
 .footer {
+    grid-area: footer;
     background-color: rgba(213, 70, 51, 0.603);
-    position: fixed;
-    right: 0;
+    /* position: fixed; */
+    /* right: 0;
     bottom: 0;
     left: 0;
-    padding: 0;
+    padding: 0; */
     height: 12%;
     border: solid rgba(250, 235, 215, 0.534) .2em;
     text-align: center;
