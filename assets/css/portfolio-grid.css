@@ -22,7 +22,6 @@
   overflow:hidden;
   color:white;
   font-family:'Oswald', sans-serif;
-  border-radius: 20%;
   
 }
 .tile img
@@ -142,6 +141,13 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 @media (max-width: 1000px) {
   .wrap {
    flex-direction: column;
-    width:400px;
+   width: 20%;
+   margin: 0;
+
+  }
+  .tile {
+    margin: 50%;
+    width: 12em;
+    height: 12em;
   }
 }
