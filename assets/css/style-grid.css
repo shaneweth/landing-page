@@ -60,6 +60,11 @@ h1 {
     
 }
 
+h2 {
+    font-size: 1.5rem;
+    color:  rgb(97, 33, 25);
+}
+
 sidebar {
     background-color: rgba(213, 70, 51, 0.603);
     margin-top: 5%;
