@@ -112,7 +112,7 @@ main {
 
 article {
     position: relative;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Oswald', sans-serif;
 
     font-size: 1.2em;
     margin: 2em;
@@ -133,12 +133,35 @@ img {
     margin: 3%;
 }
 
+/* form styling */
+
+label {
+
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+
+    font-size: 1.2em;
+    margin: 2em;
+    padding: 3em;
+    width: 80%;
+    height: 50%;
+    background-color: rgba(243, 232, 190, .4);
+    border-radius: .3em;
+
+}
+
+#name-input {
+    position: relative;
+    size: 30%;
+    margin: 5%;
+}
+
 
 footer {
     background-color: rgba(213, 70, 51, 0.603);
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    height: 8em;
+    height: 6em;
     width: 99%;
     border: solid rgba(250, 235, 215, 0.534) .2em;
     border-radius: .3em;

@@ -9,8 +9,8 @@
 }
 .tile
 {
-  width: 14em;
-  height: 14em;
+  width: 18em;
+  height: 18em;
   margin: .9em;
   background-color: rgba(119, 39, 28, 0.445);
   display:inline-block;
