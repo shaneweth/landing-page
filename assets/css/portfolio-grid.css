@@ -11,6 +11,7 @@
 {
   width: 18em;
   height: 18em;
+  border-radius: .3em;
   margin: 1.2em;
   background-color: rgba(119, 39, 28, 0.445);
   display:inline-block;
@@ -112,10 +113,10 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     background-color: currentColor;
     border-radius: 50%;
     display:block;
-  opacity:0;
-  transition: transform 0.4s ease-out, opacity 0.5s ease;
-  transform: translateY(2em);
-  text-decoration: none;
+    opacity:0;
+    transition: transform 0.4s ease-out, opacity 0.5s ease;
+    transform: translateY(2em);
+    text-decoration: none;
 }
 
 .tile:hover span
@@ -141,13 +142,14 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 
 @media (max-width: 1000px) {
   .wrap {
-   flex-direction: column;
-   width: 20%;
-   margin: 0;
+    flex-direction: column;
+    width: 100%;
+    margin: 30%;
+    margin-top: 5%;
 
   }
   .tile {
-    justify-content: center;
+    /* justify-content: center; */
     size: 100%;
 
   }
