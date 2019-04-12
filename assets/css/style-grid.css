@@ -135,27 +135,52 @@ img {
 
 /* form styling */
 
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(243, 232, 190, .4);
+    position: relative;
+
+}
+
 
 form {
-    
-    margin: 20%;
+    margin: 0;
+    height: 20rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
 }
 
 
 label {
-
+    
     position: relative;
     font-family: 'Oswald', sans-serif;
-    font-size: 1.2em;
-    padding: 0;
-    background-color: rgba(243, 232, 190, .4);
+    font-size: 1.5em;
+    padding: 3rem;
     border-radius: .3em;
 
 }
 
 #name-input {
     position: relative;
-    size: 50%;
+    width: 80%;
+    height: 2em;
+}
+
+#mail-input {
+    position: relative;
+    width: 80%;
+    height: 2em;
+}
+
+#msg {
+    position: relative;
+    width: 77%;
+    height: 8em;
 }
 
 
