@@ -5,7 +5,6 @@
 
 body {
     margin: 0;
-    padding: 0 0 10em 0;
     height: 100%;
     background-image: url("../images/background-1773664_1920.jpg");
     background-repeat: no-repeat;
@@ -34,7 +33,7 @@ footer { grid-area: footer; }
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: .8em 0;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 header {
@@ -42,9 +41,10 @@ header {
     width: 100%;
 }
 .name {
-    width: 40rem;
+    width: 40vw;
     font-family: 'Oswald', sans-serif;
     text-align: center;
+    font-size: 2vw;
     background-color: rgba(168, 55, 41, 0.4);
     border: outset rgba(250, 235, 215, 0.4) .1em;
     border-radius: .3em;
@@ -55,13 +55,13 @@ h1 {
     color: antiquewhite;
     /* color: rgb(243, 232, 190); */
     margin: .1em;
-    font-size: 3em;
+    font-size: 3vw;
     letter-spacing: .1em;
     
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.8vw;
     color:  rgb(97, 33, 25);
 }
 
@@ -76,7 +76,7 @@ h2 {
 .sidebar a {
     font-family: 'Oswald', sans-serif;
     color: black;
-    font-size: 1.6em;
+    font-size: 1.5vw;
     padding: 2em;
     height: 100%;
     text-decoration: none;
@@ -92,7 +92,7 @@ h2 {
 
 .sidebar a:hover:not(.active) {
     color: rgba(230, 189, 78, 0.685);
-    font-size: 1.8;
+    font-size: 1.6vw;
 
 }
 
@@ -102,8 +102,8 @@ li {
 
 
 main {
-    height: 50rem;
-    margin: 10%;
+    height: 100%;
+    margin: 5%;
     width: 100%;
     background-color: rgba(76, 101, 79, .6);
     border: inset rgba(65, 65, 65, 0.582) .2em;
@@ -113,7 +113,7 @@ main {
 article {
     position: relative;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.2vw;
     margin: 9%;
     padding: 1.3rem;
     width: 80%;
@@ -128,7 +128,7 @@ p {
 }
 
 img {
-    height: 12em; 
+    height: 20vh; 
     float: right;
     margin: 3%;
     border: inset  rgba(38, 51, 40, 0.3) .1em;
@@ -210,13 +210,13 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 960px) {
     .grid-container {
         grid-template: 
-                        "header header"
-                        "sidebar sidebar"
-                        "main main"
-                        "footer footer"
+                        "header"
+                        "sidebar"
+                        "main"
+                        "footer"
     }
     .name {
         width: 100%;
@@ -231,14 +231,26 @@ footer {
         padding: 0;
     }
     
+    .wrap {
+        size: 100vw;
+    }
+
     main {
         width: 100%;
-        margin: 5%;
-        height: 100%;
+        grid-row: span;
+        margin: auto auto;
+        height: 50vh;
+        justify-items: center;
+    }
+
+    article {
+        height: 40vh;
+        font-size: 1.6vh;
     }
     
     footer {
         position: fixed;
+        width: 100%;
         bottom: 0;
     }
 
