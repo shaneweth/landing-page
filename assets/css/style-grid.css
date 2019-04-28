@@ -41,7 +41,7 @@ header {
     width: 100%;
 }
 .name {
-    width: 40vw;
+    width: 35vw;
     font-family: 'Oswald', sans-serif;
     text-align: center;
     font-size: 2vw;
@@ -211,6 +211,11 @@ footer {
 }
 
 @media (max-width: 960px) {
+
+    body {
+        height: 100%;
+    }
+
     .grid-container {
         grid-template: 
                         "header"
@@ -237,9 +242,8 @@ footer {
 
     main {
         width: 100%;
-        grid-row: span;
         margin: auto auto;
-        height: 50vh;
+        height: 70vh;
         justify-items: center;
     }
 
