@@ -241,7 +241,7 @@ footer {
         justify-content: center;
     }
     .sidebar a {
-        font-size: 4vh;
+        font-size: 3vw;
     
     }
     
@@ -252,7 +252,7 @@ footer {
     
     .sidebar a:hover:not(.active) {
         color: rgba(153, 204, 224, 0.87);
-        font-size: 4.2vh;
+        font-size: 3.2vw;
     
     }
     
@@ -279,5 +279,6 @@ footer {
         position: relative;
         bottom: 0;
         height: 8vh;
+        width: 99%;
     }
 }
