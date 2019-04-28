@@ -210,8 +210,8 @@ footer {
 
 @media (max-width: 1080px) {
 
-    body {
-        height: 100%;
+    html {
+        min-height: 100%;
         margin: 0;
         padding: 0;
     }
@@ -266,8 +266,10 @@ footer {
     }
 
     article  {
-        height: 50%;
+        height: 100%;
         font-size: 3vw;
+        justify-items: center;
+        margin: auto auto;
     }
 
     article h2 {
@@ -284,6 +286,8 @@ footer {
         position: relative;
         bottom: 0;
         height: 8vh;
-        width: 99%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
 }
